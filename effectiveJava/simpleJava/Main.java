@@ -64,28 +64,11 @@ class Task2 extends Thread {
 
 public class Main {
   public static void main(String[] args) throws InterruptedException {
-    // LFUCache lfu = new LFUCache("lfu 1");
-    // LFUCache lfu2 = new LFUCache("lfu 2");
     Task1 task1 = new Task1();
     Task2 task2 = new Task2();
 
     task1.start();
     task2.start();
-
-    // for (int i = 0; i < 10; i++) {
-    //   System.out.println("lfu adding " + i + "value" + i);
-    //   lfu.put(i, "value" + i);
-    // }
-
-    // for (int i = 6; i < 10; i++) {
-    //   System.out.println("lfu adding " + i + "value" + i);
-    //   lfu.put(i, "value" + i);
-    // }
-
-    // for (int i = 1; i < 5; i++) {
-    //   System.out.println("lfu adding " + i + "value" + i);
-    //   lfu.put(i, "value" + i);
-    // }
 
     task1.join();
     task2.join();
