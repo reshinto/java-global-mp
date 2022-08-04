@@ -1,0 +1,16 @@
+plugins {
+  // id "war"
+  id "com.liferay.jasper.jspc" version "2.0.13"
+}
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  implementation project(':services')
+  implementation 'commons-cli:commons-cli:1.4'
+  implementation 'javax.servlet:servlet-api:2.5'
+  testImplementation project(':utils')
+  testImplementation('junit:junit:4.13')
+}

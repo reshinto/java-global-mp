@@ -1,0 +1,12 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.builders</groupId>
+    <artifactId>builders</artifactId>
+    <version>1.0.0</version>
+  </parent>
+
+  <artifactId>utils</artifactId>
+  <version>1.0.0</version>
+  <packaging>jar</packaging>
+</project>
