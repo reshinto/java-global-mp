@@ -1,0 +1,10 @@
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  implementation project(':utils')
+  implementation 'commons-cli:commons-cli:1.4'
+  testImplementation project(':utils')
+  testImplementation('junit:junit:4.13')
+}
