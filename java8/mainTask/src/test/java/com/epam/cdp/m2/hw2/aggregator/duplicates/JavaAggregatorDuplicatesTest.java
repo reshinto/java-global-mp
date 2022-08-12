@@ -42,7 +42,14 @@ public abstract class JavaAggregatorDuplicatesTest {
 
     @Test
     public void test() {
+        long startTime = System.nanoTime();
+
         List<String> actual = aggregator.getDuplicates(words, limit);
+
+        long endTime = System.nanoTime();
+        long duration = (endTime - startTime);
+        System.out.println("\nTotal time for duplicates tests "+ aggregator +": " + duration + " ns\n");
+
         assertEquals(expected, actual);
     }
 }

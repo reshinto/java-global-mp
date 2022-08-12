@@ -37,7 +37,14 @@ public abstract class JavaAggregatorSumTest {
 
     @Test
     public void test() {
+        long startTime = System.nanoTime();
+
         int actual = aggregator.sum(numbers);
+
+        long endTime = System.nanoTime();
+        long duration = (endTime - startTime);
+        System.out.println("\nTotal time for sum tests "+ aggregator +": " + duration + " ns\n");
+
         assertEquals(expected, actual);
     }
 }

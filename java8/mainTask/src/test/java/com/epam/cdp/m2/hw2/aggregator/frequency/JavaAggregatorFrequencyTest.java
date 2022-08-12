@@ -44,7 +44,14 @@ public abstract class JavaAggregatorFrequencyTest {
 
     @Test
     public void test() {
+        long startTime = System.nanoTime();
+
         List<Pair<String, Long>> actual = aggregator.getMostFrequentWords(words, limit);
+
+        long endTime = System.nanoTime();
+        long duration = (endTime - startTime);
+        System.out.println("\nTotal time for frequency tests "+ aggregator +": " + duration + " ns\n");
+
         assertEquals(expected, actual);
     }
 }
