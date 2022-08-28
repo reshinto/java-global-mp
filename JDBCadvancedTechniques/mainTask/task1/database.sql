@@ -1,0 +1,2 @@
+CREATE DATABASE socialmedia;
+GRANT ALL PRIVILEGES ON DATABASE socialmedia TO postgres;
